@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerticalDrawerLayout">
+        <attr name="panel_height" format="dimension" />
+        <attr name="shadow_height" format="dimension" />
+        <attr name="parallax_offset" format="dimension" />
+        <attr name="fade_colour" format="color" />
+        <attr name="fling_velocity" format="integer" />
+        <attr name="drag_viewID" format="reference" />
+        <attr name="overlay" format="boolean" />
+        <attr name="anchor_point" format="float" />
+        <attr name="initial_state" foramt="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="hidden" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

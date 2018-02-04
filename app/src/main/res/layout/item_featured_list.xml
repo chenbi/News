@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_toLeftOf="@+id/overflow"
+        android:paddingTop="8dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/list_item_text_normal"
+        android:textStyle="bold"
+        android:text="This is the episode title"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/date_length_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingTop="3dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/news_title"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_marginTop="30sp">
+
+        <TextView
+            android:id="@+id/publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/list_item_text_smaller"
+            android:text="This is the air date" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_share"
+       />
+
+</RelativeLayout>
